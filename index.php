@@ -104,7 +104,7 @@
                                 <li>Punto</li>
                             </ul>
                             <button class="suscripcion__button">
-                                <a href="./account.html">INSCRIBETE</a>
+                                <a href="./account.php">INSCRIBETE</a>
                             </button>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                                 <li>Punto</li>
                             </ul>
                             <button class="suscripcion__button">
-                                <a href="./account.html">INSCRIBETE</a>
+                                <a href="./account.php">INSCRIBETE</a>
                             </button>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                                 <li>Punto</li>
                             </ul>
                             <button class="suscripcion__button">
-                                <a href="./account.html">INSCRIBETE</a>
+                                <a href="./account.php">INSCRIBETE</a>
                             </button>
                         </div>
                     </div>
