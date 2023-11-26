@@ -1,0 +1,90 @@
+.menu{
+    margin: 0;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+.dashboard__container{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 200px;
+    gap: 40px;
+    margin: auto;
+}
+
+.dashboard__item{
+    background-color: rgb(7, 7, 7);
+    border: 3px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    transition: transform .1s;
+}
+
+.dashboard__text{
+    margin: auto;
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.dashboard__item:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.dashboard__button{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Tabletas */
+
+@media (min-width: 901px) and (max-width: 1200px){
+    .dashboard__container{
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 150px;
+        gap: 30px;
+    } 
+
+    .dashboard__text{
+        font-size: 26px;
+        font-weight: 800;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+    .dashboard__container{
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(2, 230px);
+        gap: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    } 
+}
+
+/* Móviles */
+
+@media (min-width: 320px) and (max-width: 600px){
+    .dashboard__container{
+        grid-template-columns: repeat(1, 280px);
+        grid-template-rows: repeat(4, 230px);
+        gap: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    } 
+}

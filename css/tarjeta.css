@@ -1,0 +1,59 @@
+.pagos{
+    width: 35%;
+    margin: auto;
+}
+
+.pagos__titulo{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid white;
+    height: 35px;
+    color: white;
+    margin-top: 10px;
+}
+
+input[type="submit"]{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.pagos__button{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+label{
+    color: white;
+}
+
+/* Móviles */
+
+@media (max-width: 600px) {
+    .pagos{
+        width: 90%;
+    }
+}
+
+/* Tabletas */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .pagos{
+        width: 60%;
+    }
+}

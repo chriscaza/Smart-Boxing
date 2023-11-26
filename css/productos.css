@@ -1,0 +1,235 @@
+/* Escritorio */
+
+.espectacular{
+    border-bottom: 3px solid #fff;
+}
+
+.espectacular__container{
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.espectacular__imgContainer{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+.espectacular__image{
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.espectacular__textos{
+    color: white;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 35px);
+}
+
+.espectacular__titulo{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.espectacular__pitch{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.productos{
+    width: 75%;
+    margin: auto;
+}
+
+.productos__titContainer{
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.productos__titulo{
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.productos__mosaico{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos__card{
+    background-color: white;
+}
+
+.productos__imgContainer{
+    height: 200px;
+    width: 200px;
+}
+
+.productos__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productos__txtContainer{
+    padding: 10px;
+}
+
+.productos__comprar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.productos__precio{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.productos__button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.productos-margin{
+    margin-bottom: 100px;
+}
+
+/* Móviles */
+
+@media (max-width: 600px) {
+    .espectacular__container{
+        width: 100%;
+    }
+    
+    .espectacular__image{
+        width: 90%;
+    }
+    
+    .espectacular__textos{
+        width: 100%;
+    }
+    
+    .espectacular__titulo{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .espectacular__pitch{
+        width: 90%;
+        margin: auto;
+    }
+
+    .productos{
+        width: 320px;
+    }
+    
+    .productos__titContainer{
+        margin-top: 40px;
+    }
+    
+    .productos__mosaico{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+    
+    .productos__imgContainer{
+        height: 150px;
+        width: 150px;
+    }
+
+    .productos__txtContainer{
+        padding: 5px;
+    }
+    
+    .productos__comprar{
+        margin-top: 15px;
+    }
+    
+    .productos__precio{
+        font-size: 18px;
+    }
+    
+    .productos__button{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .productos-margin{
+        margin-bottom: 40px;
+    }
+}
+
+/* Tabletas */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .espectacular__container{
+        width: 80%;
+    }
+    
+    .espectacular__image{
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+    .productos{
+        width: 601px;
+    }
+    
+    .productos__titContainer{
+        margin-top: 40px;
+    }
+    
+    .productos__mosaico{
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+    
+    .productos__imgContainer{
+        height: 280px;
+        width: 280px;
+    }
+
+    .productos__txtContainer{
+        padding: 5px;
+    }
+    
+    .productos__comprar{
+        margin-top: 15px;
+    }
+    
+    .productos__precio{
+        font-size: 18px;
+    }
+    
+    .productos__button{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .productos-margin{
+        margin-bottom: 40px;
+    }
+}

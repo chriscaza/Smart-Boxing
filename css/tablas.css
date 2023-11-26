@@ -1,0 +1,36 @@
+.titulo__container{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.titulo{
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+}
+
+#tabla {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+#tabla td, #tabla th {
+    border: 1px solid #fff;
+    padding: 12px;
+    text-align: center;
+}
+
+#tabla tr {
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+#tabla th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    color: black;
+}
