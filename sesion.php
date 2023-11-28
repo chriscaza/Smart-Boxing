@@ -1,5 +1,5 @@
 <?php
-    $connection = mysqli_connect('bfgxcdzuimicyrepcep5-mysql.services.clever-cloud.com ', 'uimpztzzagvcqwjb', 'RZViIhcyStiQGsNEtoiC', 'bfgxcdzuimicyrepcep5');
+    $connection = mysqli_connect('bfgxcdzuimicyrepcep5-mysql.services.clever-cloud.com', 'uimpztzzagvcqwjb', 'RZViIhcyStiQGsNEtoiC', 'bfgxcdzuimicyrepcep5');
 
     if(!$connection) {
         echo 'Error de conexion a la BD...'. mysqli_connect_error();
