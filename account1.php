@@ -1,6 +1,6 @@
 <?php
 
-    $connection = mysqli_connect('localhost', 'root', 'root', 'smart_boxing');
+    $connection = mysqli_connect('bfgxcdzuimicyrepcep5-mysql.services.clever-cloud.com ', 'uimpztzzagvcqwjb', 'RZViIhcyStiQGsNEtoiC', 'bfgxcdzuimicyrepcep5');
 
     if(!$connection) {
         echo 'Error de conexion a la BD...'. mysqli_connect_error();
