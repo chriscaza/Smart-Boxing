@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $nombre = $_SESSION["nombre"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +22,14 @@
         </div>
         <div>
 
-            <!--<?php 
+            <?php 
 
                 if(!isset($nombre)){
                     echo '<button class="menu__button"><a href="./sesion.html">SIGN IN</a></button>';
                 }else{
                     echo '<button class="menu__button"><a href="./signup.php">SIGN OUT</a></button>';
                 }
-            ?>--> 
+            ?>
         
         </div>
     </header>
@@ -35,7 +40,7 @@
                 <img class="principal__image principal__image-height" alt="Logo" src="./images/logo.png"/>
                 <div class="principal__pitch">
                     <h1 class="principal__titulo">
-                    <!--<?php 
+                    <?php 
 
                         if(!isset($nombre)){
                             echo 'INSCRIBETE';
@@ -43,10 +48,10 @@
                             echo 'HOLA '.$nombre;
                         }
 
-                    ?> -->
+                    ?>
                     </h1>
                     <p class="principal__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eveniet ratione dolore. Non, ab qui ducimus sapiente vitae fuga natus </p>
-                    <!--<?php 
+                    <?php 
 
                         if(!isset($nombre)){
                             echo '<button class="principal__button"><a href="./account.php">INSCRIBETE</a></button>';
@@ -54,7 +59,7 @@
                             echo '<button class="principal__button"><a href="./perfil.php">PERFIL</a></button>';
                         }
 
-                    ?> -->
+                    ?>
                 </div>
             </div>
             <div class="principal__contenedor principal__contenedor-width">
