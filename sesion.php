@@ -16,8 +16,8 @@
         
         if (!$resultado)
         {
-            echo 'Error en la Consulta.'.mysqli_connect_error();
             header('Location: sesion.html');
+            echo 'Error en la Consulta.'.mysqli_connect_error();
         }
         else{
             $rowcount=mysqli_num_rows($resultado);
@@ -31,6 +31,7 @@
                 if($_SESSION["rol"] == 'admin'){
                     header('Location: admin/dashboard.php');
                 }else{
+                    header('Location: perfil.php');
                     $_SESSION["rol"] = $row["Rol"];
                     $_SESSION["id_person"] = $row["ID_person"];
                     $_SESSION["nombre"] = $row["nombre"];
@@ -40,7 +41,6 @@
                     $_SESSION["fecha_registro"] = $row["Fecha_registro"];
                     
                     echo 'Se realizó correctamente la consulta.';
-                    header('Location: perfil.php');
                 }
             }
         }

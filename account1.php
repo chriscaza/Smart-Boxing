@@ -21,12 +21,12 @@
         
             if (!$resultado)
             {
-                echo 'Error en la Consulta.'.mysqli_connect_error();
                 header('Location: account.php');
+                echo 'Error en la Consulta.'.mysqli_connect_error();
             }
             else{
-                echo 'Se realizó correctamente el registro.';
                 header('Location: sesion.html');
+                echo 'Se realizó correctamente el registro.';
             }
         }else{
             header('Location: account.php');

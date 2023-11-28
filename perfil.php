@@ -9,7 +9,7 @@
     $rol = $_SESSION["rol"];
 
     if(!isset($nombre)){
-        header("location: sesion.php");
+        header("Location: sesion.php");
     }
 
 ?>
